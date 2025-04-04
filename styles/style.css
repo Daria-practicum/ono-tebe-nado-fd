@@ -1,1 +1,262 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  width: 1100px;
+  height: 293px;
+  align-items:center;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #FFFFFF;
+}
+
+.header-menu{
+  display: flex;
+  gap: 7%;
+  font-weight: 400px;
+  font-size: 18px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  font-family: Raleway;
+}
+
+.header-menu-main{
+  width: 67px;
+  height: 21px;
+  top: 133px;
+  left: 50px;
+  text-decoration: none;
+}
+
+.header-menu-look{
+  width: 169px;
+  height: 22px;
+  top: 133px;
+  left: 130px; 
+  list-style: circle;
+}
+
+.header-menu-about{
+  width: 129px;
+  height: 22px;
+  top: 133px;
+  left: 312px;
+  list-style: circle;
+}
+
+.header-logo{
+  display: block;
+  width: 129px;
+  height: 104px;
+  top: 92px;
+  left: 478px;
+}
+
+.header-contacts{
+  height: 98px;
+  top: 95px;
+  left: 810px;
+  max-width: 240px;
+  justify-self: end;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 0%;
+  font-style: normal;
+
+}
+
+.header-contacts-phone{
+  width: 239px;
+  height: 24px;
+  top: 95px;
+  left: 810.52px;
+  text-underline-offset: 4px;
+}
+
+.header-contacts-email{
+  width: 239px;
+  height: 24px;
+  top: 119px;
+  left: 810px;
+  text-underline-offset: 4px;
+}
+
+.header-contacts-adress{
+  justify-self: end;
+  width: 240px;
+  height: 98px;
+  top: 144px;
+  left: 811px;
+}
+
+
+.cover{
+  background: url(../images/cover.jpg);
+  background-size: cover;
+  width: 1100px;
+  height: 757px;
+}
+
+.overley{
+  position: absolute;
+  width: 1100px;
+  height: 757px;
+  background-color: rgba(0, 0, 0, 60%);
+  z-index: 1;
+}
+
+.cover-title{
+  width: 1000px;
+  height: 385px;
+  color: #FFFFFF;
+  padding: 165px 50px 207px 28px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  
+}
+
+.cover-title-ono{
+  position: relative;
+  z-index: 100;
+  display: block;
+  margin-left: 25px;
+}
+
+.cover-title-tebe{
+  position: relative;
+  display: block;
+  text-align: center;
+  z-index: 100;
+  margin-top: 20px;
+  margin-left: 150px;
+  
+}
+
+.cover-title-nado{
+  position: relative;
+  display: block;
+  text-align: end;
+  z-index: 100;
+  padding-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 639px;
+  
+}
+
+.cover-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  z-index: 100;
+  word-spacing: 18px;
+
+}
+
+.cover-description-text{
+  letter-spacing: 0%;
+  padding-left: 50px;
+  margin-top: 283px;
+  padding-bottom: 61px;
+  
+}
+
+.button{
+    list-style: initial;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background: transparent;
+    width: 256px;
+    height: 51px;
+    text-align: center;
+    margin-bottom: 51px;
+    margin-right: 50px;
+    align-self: end;
+    
+}
+  
+.lots{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    }
+  
+    .lots__heading{
+     justify-content:left;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;  
+    letter-spacing: 0%;
+    margin-top: 186px;
+    margin-left: 64px;    
+    text-transform: uppercase;
+    }
+  
+    .lots__card-list{
+        display: flex;
+        justify-content:center;
+        gap: 25px;
+        width: 1052;
+        height: 723;
+        top: 1230px;
+        left: 24px;
+      
+    }
+  
+    .lots__card-list-item{
+        
+      
+  
+    }
+  
+    .card-link{
+        
+    }
+  
+    .card{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 334;
+    height: 596;
+   
+
+    }
+  
+    .card_type_film{
+  
+    }
+  
+    .card_type_book{
+  
+    }
+  
+    .card_type_picture{
+  
+    }
+  
+    .card__title{
+    
+    }
+  
+    .card__text{
+        text-decoration: none;
+    }
+  
+    .lots__look-more-link{
+  
+    }
