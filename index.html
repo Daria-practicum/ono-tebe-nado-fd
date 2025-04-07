@@ -15,9 +15,9 @@
 
     <header class="header">
       <nav class="header-menu">
-        <a href="0" class="header-menu-main">главная</a>
-        <a href="0" class="header-menu-look">посмотреть лоты</a>
-        <a href="0" class="header-menu-about">об аукционе</a>
+        <a href="0" class="menu-main">главная</a>
+        <a href="0" class="menu-look">посмотреть лоты</a>
+        <a href="0" class="menu-about">об аукционе</a>
       </nav>
       <a>
         <img
@@ -25,9 +25,11 @@
         class="header-logo">
       </a>
       <address class="header-contacts">
-        <p class="header-contacts-phone"><a href="tel:+70000000">+9 999 555 5555</a></p> 
-        <p class="header-contacts-email"><a href="mailto:mail@example.com">info@sobaka.ge</a></p> 
-        <p class="header-contacts-adress">наб. Принсенграхт 263- 265, Амстердам</p>
+        <div class="contacts">
+        <p class="contacts-phone"><a href="tel:+70000000">+9 999 555 5555</a></p> 
+        <p class="contacts-email"><a href="mailto:mail@example.com">info@sobaka.ge</a></p> 
+        <p class="contacts-adress">наб. Принсенграхт 263- 265, Амстердам</p>
+      </div>
       </address>
     </header>
 
@@ -89,11 +91,11 @@
         </div>
         <div class="about-column-text">
           <h1 class="about-title">об аукционе</h1>
-          <p class="about__text">
+          <p class="about-text">
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. 
             Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </p>
-          <p class="about__text">
+          <p class="about-text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. 
             Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотряна критику, кажущуюся простоту или сложность, 
             сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
@@ -103,15 +105,39 @@
     </main>
 
     <footer class="footer">
-      <p class="contacts">
+      <div class="footer-contacts">
+        <div class="contacts">
+        <p class="contacts-phone"><a href="tel:+70000000">+9 999 555 5555</a></p> <br>
+        <p class="contacts-email"><a href="mailto:mail@example.com">info@sobaka.ge</a></p> <br>
+        <p class="contacts-adress">наб. Принсенграхт 263- 265, Амстердам</p>
+        </div>
+      </div>
+      <nav class="footer-menu">
+        <a href="0" class="menu-main">главная</a>
+        <a href="0" class="menu-look">посмотреть лоты</a>
+        <a href="0" class="menu-about">об аукционе</a>
+    </nav>
 
-      </p>
-      <p class="menu">
+      <div class="footer-socials">
+        <ul class="footer-socials-list">
+          <li class="footer-socials-list-item">
+            <a href="0" class="footer-socials-link">
+             <img src="/images/yt.svg" class="footer-socials-icon">
+            </a>
+          </li>
+          <li class="footer-socials-list-item">
+            <a href="0" class="footer-socials-link">
+              <img src="/images/vk.svg" class="footer-socials-icon">
+            </a>
+          </li>
+          <li class="footer-socials-list-item">
+            <a href="0" class="footer-socials-link">
+              <img src="/images/pinterest.svg" class="footer-socials-icon">
+             </a>
+          </li>
+        </ul>
 
-      </p>
-      <p class="socials">
-
-      </p>
+      </div>
     </footer>
   </body>
 </html>
