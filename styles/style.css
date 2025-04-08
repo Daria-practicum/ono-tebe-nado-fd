@@ -184,7 +184,6 @@
       line-height: 100%;  
       letter-spacing: 0%;  
       text-transform: uppercase;
-
     }
   
     
@@ -242,8 +241,8 @@
       justify-content:space-between;
       height: 100%;
       padding: 48px 40px;
-      height: 596px;
       color: #FFFFFF;
+      background-position: center;
       background-size: cover;
     }
   
@@ -287,7 +286,6 @@
       width: 1052px;
       height: 595px;
       margin-top: 120px 24px 180px 24px;   
-
     }
 
     .about-column {
