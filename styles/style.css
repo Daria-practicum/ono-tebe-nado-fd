@@ -10,25 +10,32 @@
   font-size: 18px;
 }
 
-.header-menu {
-  font-weight: normal;
+.menu {
+  justify-content: center;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
-.header-menu-list {
+.menu-list {
   display: flex;
-  gap: 30px;
+  gap: 31px;
   list-style: circle;
   text-underline-offset: 4px;
-  padding-bottom: 8px;
-  word-spacing: 4px;
+  padding-bottom: 6px;
+  word-spacing: 3px;
 }
 
-.menu-main {
+.menu-item {
+  white-space: nowrap;
+}
+
+.menu-item.main {
   list-style: none;
 }
 
-.main-link {
+.menu-link.main {
   text-decoration: none;
 }
 
@@ -74,6 +81,7 @@
   background-position: center;
   width: 1100px;
   min-height: 757px;
+  padding: 165px 50px 0px 50px;
 }
 
 .overley {
@@ -88,20 +96,19 @@
 
 .cover-title {
   color: #ffffff;
-  font-family: Raleway;
   font-weight: 700;
   font-size: 100px;
   line-height: 1.15;
   text-transform: uppercase;
   letter-spacing: 0.3em;
+  letter-spacing: 30px;
 }
 
 .cover-title-left {
   position: relative;
   z-index: 100;
   display: block;
-  padding-left: 49px;
-  padding-top: 166px;
+  text-align: left;
 }
 
 .cover-title-center {
@@ -109,8 +116,8 @@
   display: block;
   text-align: center;
   z-index: 100;
-  padding-top: 20px;
-  padding-left: 32px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .cover-title-right {
@@ -118,31 +125,25 @@
   display: block;
   text-align: end;
   z-index: 100;
-  padding-bottom: 25px;
-  padding-top: 20px;
-  padding-right: 20px;
+  margin-top: 20px;
+  margin-right: -30px;
 }
 
 .cover-description {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 400;
   font-size: 22px;
-  line-height: 28px;
-  position: relative;
-  z-index: 100;
-  word-spacing: 18px;
-  padding-top: 10px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .cover-description-text {
-  align-content: start;
-  padding-top: 82px;
+  line-height: 28px;
+  word-spacing: 18px;
+  margin-top: 120px;
 }
 
 .button {
@@ -154,14 +155,13 @@
   height: 51px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 70px;
-  margin-left: 110px;
+  margin-top: 105px;
 }
 
 .lots {
   display: flex;
   flex-wrap: wrap;
-  margin: 180px 24px 120px 24px;
+  padding: 180px 24px 120px 24px;
 }
 
 .lots__heading {
@@ -177,7 +177,6 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 25px;
   list-style: none;
 }
@@ -186,14 +185,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 334px;
-  height: 596px;
+  min-height: 596px;
 }
 
 .lots__look-more-link {
-  width: 192;
-  height: 23;
-  top: 700px;
-  left: 40px;
   padding: 30px 102px 0px 40px;
   font-size: 20px;
   text-underline-offset: 5px;
@@ -218,15 +213,15 @@
 }
 
 .card_type_film {
-  background: url(/images/card-lot-01.jpg);
+  background: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background: url(/images/card-lot-02.jpg);
+  background: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background: url(/images/card-lot-03.jpg);
+  background: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -252,18 +247,15 @@
 .about {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
   width: 1052px;
-  height: 595px;
   margin-top: 120px 24px 180px 24px;
 }
 
 .about-column {
   padding-left: 49px;
-  padding-top: 22px;
   width: 359px;
-  height: 595px;
   margin-left: 23px;
+  padding-top: 35px;
 }
 
 .about-logo {
@@ -304,22 +296,21 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 180px;
+  margin-top: 155px;
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 80px;
 }
 
 .footer-contacts {
   max-width: 265px;
 }
 
-.footer-menu {
-  font-size: 18px;
+.footer-menu .menu-list {
+  flex-direction: column;
+  gap: 5px;
   text-align: center;
-}
-
-.footer-menu-list {
-  list-style-type: none;
+  list-style: none;
 }
 
 .footer-socials-list {
